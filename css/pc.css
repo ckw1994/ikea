@@ -1,0 +1,395 @@
+body{
+    background-color: #ffff;
+    font-size: 20px;
+}
+
+.mobile-only{
+    display: none;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+
+#main-header{
+    width: 100%;
+    min-width: 1115px;
+    height: 80px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    background-color: #E4E4E4;
+}
+
+#main-header > h1 {
+    margin-left: 20px;
+}
+
+#gnb > ul {
+    display: flex;
+}
+
+#gnb > ul > li {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#gnb > ul > li > a {
+    font-weight: 500;
+    font-size: 18px
+}
+
+#gnb > ul > li > a:hover {
+    color: var(--main-color2);
+    border-bottom: 3px solid var(--main-color1);
+    transition: 1s;
+}
+
+#right-menu {
+    margin-right: 20px;
+    display: flex;
+}
+
+#right-menu > ul {
+    display: flex;
+}
+
+#right-menu > ul > li {
+    margin-right: 20px;
+}
+
+#pc-site-map-btn {
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* 슬라이더 */
+.swiper {
+    width: 100%;
+        /* min-width: 1218px; */
+    height: calc(100vh - 80px);
+    background-color: #ccc;
+}
+
+.swiper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper .swiper-slide .title > h2 {
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    font-size: 36px;
+    font-weight: 400;
+   
+}
+
+.swiper .swiper-slide .title > h2 > span {
+    font-size: 60px;
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+}
+
+.swiper .swiper-slide.s1  {
+    background-image: url(../images/main-visual-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper .swiper-slide.s2  {
+    background-image: url(../images/main-visual-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper .swiper-slide.s3  {
+    background-image: url(../images/main-visual-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    color: var(--main-color1);
+    transition: 0.5s;
+}
+
+.swiper-pagination{
+    bottom: 60px !important;
+}
+
+.swiper-pagination-bullet {
+    border: #fff;
+    width: 14px;
+    height: 14px;
+    border-radius: 0;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    background-color: transparent;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--main-color1);
+    border: var(--main-color1);
+    opacity: 1;
+}
+
+/* 컨텐츠 */
+
+main section.container {
+    display: flex;
+    background-color: #FAFAFA;
+  }
+  
+  /* 짝수만 flex box 순서 바꿈 */
+  main section.container:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+  
+  main section.container > img {
+    width: 50%;
+    flex: 1;
+  }
+  
+  main section.container .text-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  .text-box-inner h2{
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 54px;
+    margin-bottom: 20px;
+    color: #333;
+  } 
+  
+  .text-box-inner p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #333;
+  }
+  
+  
+  .detail-btn {
+    display: inline-block;
+    margin-top: 40px;
+    width: 220px;
+    height: 48px;
+    background-color: var(--main-color2);
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+    color: var(--main-color1);
+  }
+
+/* about */
+#about h2 {
+    font-size: 48px;
+    margin-bottom: 60px;
+    font-weight: 500;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  }
+
+#about p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+}
+
+  
+  #about {
+    width: 100%;
+    height: 550px;
+    background: #ccc;
+    background-image: url(../images/about-visual.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #about .container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about .text-box {
+    /* outline: 1px solid red; */
+    text-align: center;
+    color: #fff;
+  }
+  
+  #about .detail-btn {
+    color:var(--main-color1);
+    margin: auto;
+    margin-top: 60px;
+  }
+
+
+/* 사이트 맵 */
+
+.site-map-modal.on {
+    position: fixed;
+    background-color: var(--main-color2);
+    top: 0;
+    right: 0;
+    width: 100vw;
+    /* min-width: 1218px; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+}
+
+.site-map-modal {
+    display: none;
+}
+
+
+.site-map-modal a{
+    color: #fff;
+}
+
+.site-map-modal a:hover {
+    color: var(--main-color1);
+    border-bottom: 2px solid var(--main-color1);
+    transition: 1s;
+}
+
+.site-map-modal .depth1{
+    display: flex;
+    text-align: center;
+}
+
+.site-map-modal .depth1 > li {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.site-map-modal .depth1 > li > a {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.site-map-modal .depth2 {
+    margin-top: 1em;
+}
+
+.site-map-modal .depth2 > li {
+    margin-top: 1em;
+}
+
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* footer */
+.f-container{
+    width: 100%;
+    min-width: 1115px;
+}
+
+.f-container  .menu-box-01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.f-container  .menu-box-01 .f-menu > ul{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.f-container  .menu-box-01 .f-menu > ul > li {
+    margin-right: 50px;
+}
+
+.f-container  .menu-box-01 .f-sns-group > ul {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.f-container  .menu-box-01 .f-sns-group > ul > li {
+    margin-left: 30px;
+}
+
+.f-container  .menu-box-02 {
+    position: relative;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.f-container  .menu-box-02 > h1 {
+    margin-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+.f-container  .menu-box-02 > .f-info{
+    float: left;
+    margin-left: 20px;
+}
+
+.f-container  .menu-box-02 > .f-info > ul > li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.f-container  .menu-box-02 > .f-up-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

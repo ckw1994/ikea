@@ -1,0 +1,29 @@
+:root{
+  --text-color:#333;
+  --main-color1:#FBD914;
+  --main-color2:#0058AB;
+  --contents-bg-color:#FAFAFA;
+
+}
+
+body{
+    background-color: #F5F5F4;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+

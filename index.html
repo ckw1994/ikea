@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA</title>
+    <!-- swiper-slider cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- default.css -->
+    <link rel="stylesheet" href="./css/default.css">
+    <!-- pc.css -->
+    <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width: 768px)">
+    <!-- mobile.css -->
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 767px)">
+    <!-- 제이쿼리cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- swiper-slider-script -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <header id="main-header" class="container">
+        <h1>
+            <a href="./">
+                <img src="./images/Logo.svg" alt="logo">
+            </a>
+        </h1>
+
+        <nav id="gnb">
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">모든제품</a></li>
+                <li><a href="#">새로운소식</a></li>
+                <li><a href="#">매장안내</a></li>
+                <li><a href="#">고객문의</a></li>
+            </ul>
+            <button id="m-login-btn" class="mobile-only">
+                <img src="./images/m-login-icon.png" alt="login-icon.svg">
+            </button>
+        </nav>
+
+        <div id="right-menu">
+            <ul class="header-icon-group pc-only">
+                <li><a href="#"><img src="./images/login-icon.svg" alt="login-icon.svg"></a></li>
+                <li><a href="#"><img src="./images/cart-icon.svg" alt="cart-icon.svg"></a></li>
+                <li><a href="#"><img src="./images/delivery-icon.svg" alt="delivery-icon.svg"></a></li>
+            </ul>
+
+            <!-- pc 토글 버튼 -->
+            <button id="pc-site-map-btn" class="pc-only">
+                <img src="./images/menu-icon.svg" alt="pc-toggle-menu-btn">
+            </button>
+            <!-- 모바일 토글 버튼 -->
+            <button id="m-site-map-btn" class="mobile-only">
+                <img src="./images/m-toggle-btn.svg" alt="mobile-only">
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Slider main container -->
+    <div id="main-visual" class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide s1">
+                <div class="title">
+                    <h2>
+                        보다 많은 사람들을 위한 <br>
+                        멋진 디자인과 기능, 다양한 홈퍼니싱 제품과 합리적인 가격<br>
+                        <span>IKEA의 비전입니다</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="swiper-slide s2">
+                <div class="title">
+                    <h2>
+                        작은 소품부터 큰 부피의 가구까지<br>
+                        원하는 모든 제품을 부담 없이 IKEA에서<br>
+                        <span>마음의 거리, 시간적 거리, 공간적 거리를 더 가까이</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="swiper-slide s3">
+                <div class="title">
+                    <h2>
+                        배송을 신청하거나 제품을 조립해야 할 때,<br>
+                        심지어 새로운 주방을 계획하고 설치하는 일까지 IKEA가<br>
+                        <span>언제든지 도와드릴게요</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!-- 하단 버튼 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div> <!-- swiper -->
+
+    <main>
+        <section id="content1" class="container c-1">
+            <img src="./images/contents-01.jpg" alt="contents-1">
+            <div class="text-box">
+                <div class="text-box-inner">
+                    <h2>
+                        모든제품
+                    </h2>
+                    <P>더 낮은 새로운 가격 으로 <br>
+                        봄의 싱그러움을 방안으로 들여보세요</P>
+                    <a href="#" class="detail-btn">모든제품 바로가기</a>
+                </div>
+            </div>
+        </section>
+        <section id="content2" class="container c-2">
+            <img src="./images/contents-02.jpg" alt="contents-2">
+            <div class="text-box">
+                <div class="text-box-inner">
+                    <h2>
+                        새로운소식
+                    </h2>
+                    <P>자신에게 가장 중요한 카테고리에서 뉴스와 보도자료를 검색하고 <br>
+                        필터를 활용하여 원하는 콘텐츠를 찾아보세요</P>
+                    <a href="#" class="detail-btn">새로운소식 바로가기</a>
+                </div>
+            </div>
+        </section>
+        <section id="content3" class="container c-3">
+            <img src="./images/contents-03.jpg" alt="contents-3">
+            <div class="text-box">
+                <div class="text-box-inner">
+                    <h2>
+                        매장안내
+                    </h2>
+                    <P>매장을 선택하여 해당 매장의 영업 시간, 재고 상황과 할인 정보를 확인해보세요 <br>
+                        사용자의 위치는 공유되지 않습니다</P>
+                    <a href="#" class="detail-btn">매장안내 바로가기</a>
+                </div>
+            </div>
+        </section>
+        <section id="content4" class="container c-4">
+            <img src="./images/contents-04.jpg" alt="contents-4">
+            <div class="text-box">
+                <div class="text-box-inner">
+                    <h2>
+                        고객문의
+                    </h2>
+                    <P>도움이 필요하신가요?<br>
+                        고객지원 센터로 연락 주세요 저희가 상세히 알려드리겠습니다</P>
+                    <a href="#" class="detail-btn">매장안내 바로가기</a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="text-box">
+                    <h2>IKEA</h2>
+                    <p>
+                        이케아는 스웨덴의 가구 제조 기업이며 스칸디나비아 특유의 디자인과 저렴한 가격, <br>
+                        그리고 무엇보다 소비자가 직접 운반하고 제작해 조립과 배송 비용이 없는 DIY 제품 판매로 발전하여 친 소비자 , 친 환경적 기업입니다
+                    </p>
+                    <a href="#" class="detail-btn">홈 바로가기</a>
+                </div>
+            </div><!-- container -->
+        </section>
+    </main>
+
+
+    <!-- 사이트맵 모달 창 -->
+    <div class="site-map-modal pc-only">
+        <ul class="depth1">
+            <li><a href="#">모든제품</a>
+                <ul class="depth2">
+                    <li><a href="#">홈스마트</a></li>
+                    <li><a href="#">홈가구</a></li>
+                    <li><a href="#">홈오피스</a></li>
+                    <li><a href="#">홈데코</a></li>
+                    <li><a href="#">조명</a></li>
+                    <li><a href="#">주방용품</a></li>
+                    <li><a href="#">욕실</a></li>
+                </ul>
+            </li>
+            <li><a href="#">새로운소식</a>
+                <ul class="depth2">
+                    <li><a href="#">자원순환 허브</a></li>
+                    <li><a href="#">홈퍼니싱 솔루션</a></li>
+                    <li><a href="#">IKEA with 신한카드</a></li>
+                    <li><a href="#">센스있는 선물 아이디어</a></li>
+                    <li><a href="#">이유 있는 가격, IKEA 추천 제품</a></li>
+                    <li><a href="#">우리 집 맞춤 IKEA 주방</a></li>
+                </ul>
+            </li>
+            <li><a href="#">매장안내</a></li>
+            <li><a href="#">고객문의</a>
+                <ul class="depth2">
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">배송조회</a></li>
+                    <li><a href="#">교환환불</a></li>
+                    <li><a href="#">품질보증</a></li>
+                    <li><a href="#">부품신청</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button id="close-btn" class="pc-only">
+            <img src="./images/close-btn.svg" alt="close-btn.svg">
+        </button>
+    </div>
+
+    <footer id="main-footer">
+        <div class="f-container">
+            <div class="menu-box-01">
+                <div class="f-menu">
+                    <ul>
+                        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="#">쿠키정책</a></li>
+                        <li><a href="#">쿠키설정</a></li>
+                        <li><a href="#">웹사이트 이용약관</a></li>
+                        <li><a href="#">Responsible disclosure</a></li>
+                    </ul>
+                </div>
+                <div class="f-sns-group">
+                    <ul>
+                        <li><a href="#"><img src="./images/facebook-icon.svg" alt="facebook-icon.svg"></a></li>
+                        <li><a href="#"><img src="./images/instagram-icon.svg" alt="instagram-icon.svg"></a></li>
+                        <li><a href="#"><img src="./images/youtube-icon.svg" alt="youtube-icon.svg"></a></li>
+                        <li><a href="#"><img src="./images/kakao-icon.svg" alt="kakao-icon.svg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f-line pc-only">
+                <hr>
+            </div>
+            <div class="menu-box-02">
+                <h1><a href="./"><img src="./images/Logo.svg" alt="f-Logo.svg"></a></h1>
+                <div class="f-info">
+                    <ul>
+                        <li>법인명 : IKEA 코리아</li>
+                        <li>주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점</li>
+                        <li>TEL : 1670-4532</li>
+                        <li>통신판매업 신고 : 2018-경기광명-0209</li>
+                    </ul>
+                    <p class="copy">© Inter IKEA Systems B.V 1999-2022</p>
+                </div>
+                <a href="#" class="f-up-btn"><img src="./images/f-up-icon.svg" alt="f-up-icon.svg"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- slider-js -->
+    <script src="./js/swiper.js"></script>
+</body>
+
+</html>
