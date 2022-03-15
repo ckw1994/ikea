@@ -315,6 +315,8 @@ main section.container {
 .f-container{
     width: 100%;
     min-width: 1115px;
+    background-color: #E4E4E4;
+
 }
 
 .f-container  .menu-box-01 {

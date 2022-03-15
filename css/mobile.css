@@ -245,6 +245,8 @@ main section.container {
   /* footer */
 .f-container{
   width: 100%;
+  background-color: #E4E4E4;
+
 }
 
 .f-container  .menu-box-01 {
