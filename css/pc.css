@@ -47,7 +47,7 @@ body{
 #gnb > ul > li > a:hover {
     color: var(--main-color2);
     border-bottom: 3px solid var(--main-color1);
-    transition: 1s;
+  
 }
 
 #right-menu {

@@ -50,8 +50,13 @@ body{
 #gnb > ul > li > a {
     font-weight: 500;
     font-size: 18px;
-    color: var(--main-color1);
+    color: #fff;
 }
+
+#gnb > ul > li > a:hover {
+  color: var(--main-color1);
+}
+
 
 #m-login-btn {
     background-color: transparent;
@@ -61,6 +66,11 @@ body{
     right: 20px;
     top: 20px;
 }
+
+#m-login-btn:hover {
+    background-color: var(--main-color1);
+}
+
 
 #m-site-map-btn {
     background-color: transparent;
