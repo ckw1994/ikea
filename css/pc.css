@@ -15,7 +15,7 @@ body{
 
 #main-header{
     width: 100%;
-    min-width: 1115px;
+    min-width: 1465px;
     height: 80px;
     display: flex;
     position: relative;
@@ -30,13 +30,22 @@ body{
     margin-left: 20px;
 }
 
+
+
 #gnb > ul {
+    padding-top: 10px;
+    /* margin-top: 30px; */
+    padding-bottom: 20px;
     display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
 }
 
 #gnb > ul > li {
     margin-left: 50px;
     margin-right: 50px;
+    position: relative;
 }
 
 #gnb > ul > li > a {
@@ -48,6 +57,63 @@ body{
     color: var(--main-color2);
     border-bottom: 3px solid var(--main-color1);
   
+}
+
+
+ /* 2단계 */
+ #gnb .depth-2{
+     /* margin-top: 0px; */
+     /* outline: 1px solid red; */
+     text-align: center;
+     position: absolute;
+     width: 180px;
+     height: 360px;
+    padding-bottom: 10px;
+    top: 20px;
+    left: -50px;
+    background-color: #e4e4e3;
+    z-index: 99;
+  /* outline: 1px solid rebeccapurple; */
+
+
+}
+
+#gnb .depth-2 > li {
+  /* margin-top: 1em;   */
+  margin-bottom: 1em;
+
+  /* margin-left: 10px; */
+  /* outline: 1px solid rebeccapurple; */
+}
+
+#gnb .depth-2 > li:last-child {
+  /* outline: 1px solid rebeccapurple; */
+
+}
+
+
+#gnb .depth-2 > li > a{
+  font-size: 15px;
+}
+
+#gnb .depth-2 > li > a:hover{
+    color: var(--main-color2);
+    border-bottom: 3px solid var(--main-color1);
+    transition: 0.5s;
+  
+}
+
+
+/* 2단계 액션 */
+#gnb .depth-2{
+  display: none;
+  margin-top: 0.5em;
+}
+
+#gnb .depth-2.on{
+  display: block;
+  transition: 0.5s;
+
 }
 
 #right-menu {

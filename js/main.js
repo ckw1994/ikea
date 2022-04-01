@@ -1,4 +1,14 @@
 $(function(){
+    $('#gnb > ul > li').hover(
+        function () {
+            $(this).children().addClass('on');
+        },
+        function () {
+            $(this).children().removeClass('on')
+        }
+    );
+
+
     // mobile - 사이트맵 토글 버튼
     $('#m-site-map-btn').click(function(){
         $('#gnb').toggleClass('on');

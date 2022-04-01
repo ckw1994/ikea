@@ -57,6 +57,25 @@ body{
   color: var(--main-color1);
 }
 
+/* 2단계 액션 */
+#gnb .depth-2{
+  display: none;
+  margin-top: 0.5em;
+}
+
+#gnb .depth-2.on{
+  display: block;
+}
+
+#gnb .depth-2 > li > a{
+  color: #fff;
+}
+
+#gnb .depth-2 > li > a:hover{
+  color: var(--main-color1);
+  border-bottom: 3px solid var(--main-color1);
+
+}
 
 #m-login-btn {
     background-color: transparent;
